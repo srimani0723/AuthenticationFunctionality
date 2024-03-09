@@ -27,7 +27,7 @@ const Login = props => {
     }
 
     const response = await fetch(url, options)
-    const data = await response.json
+    const data = await response.json()
 
     if (response.ok === true) {
       onSuccessLogin(data.jwt_token)
